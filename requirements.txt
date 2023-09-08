@@ -1,2 +1,5 @@
 tensorflow
 cv2
+numpy
+pandas 
+sklearn

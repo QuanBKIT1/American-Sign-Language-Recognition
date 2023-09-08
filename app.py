@@ -23,7 +23,7 @@ def regconize():
 		old_text = text
 		prediction = np.array(model.predict(frame_for_model))
 		prediction_probability = prediction[0, prediction.argmax()]
-		text = classes[prediction.argmax()]      # Selecting the max confidence index.
+		text = cf.CLASSES[prediction.argmax()]      # Selecting the max confidence index.
 		if text == 'space':
 			text = '_'
 		if text != 'nothing':	
@@ -50,5 +50,3 @@ def regconize():
 		if k == ord("z"):
 			word = word[:-1]
 regconize()
-
-
