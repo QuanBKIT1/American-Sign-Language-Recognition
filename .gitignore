@@ -1,0 +1,6 @@
+data/**
+*.docx
+*.pptx
+model/
+checkpoint/
+**/__pycache__/
